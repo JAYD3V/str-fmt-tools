@@ -1,0 +1,47 @@
+{
+     "include": [
+          "src/**/*.mts",
+          "src/**/*.ts"
+     ],
+
+     "exclude": [
+          "node_modules/**/*",
+          "build/**/*",
+          "types/**/*",
+          "*.d.ts",
+          "*.d.mts"
+     ],
+
+     "compilerOptions": {
+          "lib": [ "ESNext" ],
+          "target": "ES2022",
+          "outDir": "build/",
+          "baseUrl": "./src",
+          "module": "NodeNext",
+          "moduleResolution": "NodeNext",
+          "resolveJsonModule": true,
+          "allowSyntheticDefaultImports": false,
+          "esModuleInterop": false,
+          "declaration": true,
+          "sourceMap": true,
+          "inlineSources": true,
+          "watch": false,
+          "listEmittedFiles": true,
+          "strictFunctionTypes": true,
+          "useUnknownInCatchVariables": true,
+          "exactOptionalPropertyTypes": true,
+          // Type Checks
+          "noImplicitAny": true,
+          "noImplicitThis": true,
+          "noImplicitReturns": true,
+          "noImplicitOverride": true,
+          "noUncheckedIndexedAccess": true,
+          "strictNullChecks": true,
+          "strictPropertyInitialization": true,
+          "strictBindCallApply": true,
+          "noPropertyAccessFromIndexSignature": true,
+          "allowUnreachableCode": true,
+          "noUnusedLocals": false,
+          "alwaysStrict": false
+     }
+}
